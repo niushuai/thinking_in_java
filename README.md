@@ -1,4 +1,4 @@
-tij
+##Thinking In Java的代码
 ===
 
-《Thinking In Java》
+持续更新中...
