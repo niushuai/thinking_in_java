@@ -22,15 +22,15 @@ class thinkpad {
 	}
 }
 
-class Macbook {
+class MacbookPro {
 	private Intel intel = new Intel();
 
 	public void buy() {
-		System.out.println("macbook");
+		System.out.println("macbookpro");
 	}
 }
 
-class SuperMacbook extends Macbook {
+class SuperMacbook extends MacbookPro {
 	public void buyOther() {
 		System.out.println("desk computer");
 	}
