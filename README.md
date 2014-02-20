@@ -1,4 +1,4 @@
-##《Thinking In Java》学习笔记
+##《Thinking In Java》
 ===
 
 打算把书中的练习代码放到这里~
