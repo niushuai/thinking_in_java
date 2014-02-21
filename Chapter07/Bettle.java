@@ -18,6 +18,6 @@ public class Bettle extends Insect{
 		super(name);
 	}
 	public static void main(String... args) {
-		
+		Bettle bettle = new Bettle();
 	}
 }
