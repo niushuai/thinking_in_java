@@ -14,48 +14,52 @@ package Chapter11;
  *  也不知道理解的对不对。。。。反正我感觉不靠谱(...逃
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
 
 class ReversibleArrayList<T> extends ArrayList<T> {
-	public ReversibleArrayList(Collection<T> c) {
-		super(c);
-	}
+    public ReversibleArrayList(Collection<T> c) {
+        super(c);
+    }
 
-	public Iterable<T> reverse() {
-		return new Iterable<T>() {
-			public Iterator<T> iterator() {
-				return new Iterator<T>() {
-					int index = size() - 1;
+    public Iterable<T> reverse() {
+        return new Iterable<T>() {
+            @Override
+            public Iterator<T> iterator() {
+                return new Iterator<T>() {
+                    int index = size() - 1;
 
-					public boolean hasNext() {
-						return index > -1;
-					}
+                    public boolean hasNext() {
+                        return index > -1;
+                    }
 
-					public T next() {
-						return get(index--);
-					}
+                    public T next() {
+                        return get(index--);
+                    }
 
-					public void remove() {
-						throw new UnsupportedOperationException();
-					}
-				};
-			}
-		};
-	}
+                    public void remove() {
+                        throw new UnsupportedOperationException();
+                    }
+                };
+            }
+        };
+    }
 }
 
 public class AdaptMethodIdiom {
-	public static void main(String[] args) {
-		ReversibleArrayList<String> ral = new ReversibleArrayList<String>(
-				Arrays.asList("To be or not to be".split(" ")));
-		for (String s : ral) {
-			System.out.print(s + " ");
-		}
-		System.out.println();
+    public static void main(String[] args) {
+        ReversibleArrayList<String> ral =
+                new ReversibleArrayList<String>(Arrays.asList("To be or not to be".split(" ")));
+        for (String s : ral) {
+            System.out.print(s + " ");
+        }
+        System.out.println();
 
-		for (String s : ral.reverse()) {
-			System.out.print(s + " ");
-		}
-		System.out.println();
-	}
+        for (String s : ral.reverse()) {
+            System.out.print(s + " ");
+        }
+        System.out.println();
+    }
 }
