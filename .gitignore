@@ -2,7 +2,10 @@
 copy.sh
 /bin
 
-#Windows
+#eclipse
+.clpassth
+.project
+.settings
 
-.*
+#Windows
 bin
