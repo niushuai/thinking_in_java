@@ -1,4 +1,4 @@
-package concurrency;
+package Chapter21;
 
 import java.util.Random;
 import java.util.concurrent.PriorityBlockingQueue;

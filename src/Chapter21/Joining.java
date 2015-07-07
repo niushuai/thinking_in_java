@@ -1,4 +1,4 @@
-package concurrency;
+package Chapter21;
 
 class Sleeper extends Thread {
 	private int duration;

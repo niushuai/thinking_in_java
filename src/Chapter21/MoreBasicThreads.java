@@ -1,4 +1,4 @@
-package concurrency;
+package Chapter21;
 
 public class MoreBasicThreads {
 	public static void main(String[] args) {

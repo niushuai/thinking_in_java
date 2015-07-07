@@ -1,4 +1,4 @@
-package concurrency;
+package Chapter21;
 
 public class EvenGenerator extends IntGenerator {
 	

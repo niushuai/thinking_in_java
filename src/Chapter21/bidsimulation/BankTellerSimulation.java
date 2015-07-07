@@ -1,4 +1,4 @@
-package concurrency.bidsimulation;
+package Chapter21.bidsimulation;
 
 //: concurrency/BankTellerSimulation.java
 //Using queues and multithreading.

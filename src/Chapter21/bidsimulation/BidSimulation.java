@@ -1,4 +1,4 @@
-//package concurrency.bidsimulation;
+//package Chapter21.bidsimulation;
 //
 //import java.util.LinkedList;
 //import java.util.PriorityQueue;

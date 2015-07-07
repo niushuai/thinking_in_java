@@ -1,4 +1,4 @@
-package concurrency;
+package Chapter21;
 
 public abstract class IntGenerator {
 	private volatile boolean canceled = false;

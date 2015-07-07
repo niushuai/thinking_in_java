@@ -1,4 +1,4 @@
-package concurrency;
+package Chapter21;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

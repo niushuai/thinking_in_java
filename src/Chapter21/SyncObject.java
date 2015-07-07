@@ -1,4 +1,4 @@
-package concurrency;
+package Chapter21;
 
 class DualSynch {
 	private Object syncObject = new Object();
