@@ -1,1 +1,8 @@
+#Mac
 copy.sh
+/bin
+
+#Windows
+
+.*
+bin
