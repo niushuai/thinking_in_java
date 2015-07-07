@@ -3,7 +3,7 @@ copy.sh
 /bin
 
 #eclipse
-.clpassth
+.classpath
 .project
 .settings
 
