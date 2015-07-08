@@ -6,11 +6,11 @@ package Chapter19;
  * 1. 必须先定义 enum 实例(否则编译错误)<br>
  * 2. enum 序列最后要添加分号
  * 
- * @author niushuai
- *
+ * @author niushuai02
+ * 
  */
 public enum _02_OzWitch {
-    // 括号后面就是构建函数的参数啊！
+    // 括号后面就是构造函数的调用啊= =
     WEST("this is west"), NORTH("this is north"), EAST("this is east"), SOUTH("this is south");
 
     private String description;

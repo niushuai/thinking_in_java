@@ -1,5 +1,14 @@
 package Chapter19;
 
+/**
+ * 1. ordinal()返回每个enum实例在声明时的次序，从0开始。<br>
+ * 2. 可以使用==比较enum实例，因为每个enum实例都继承自Enum类，会提供equals()和hashCode()方法<br>
+ * 3. Enum类实现了Comparable和Serialiazble接口<br>
+ * 4. 调用getDeclaringClass()就能知道enum实例所属的enum类<br>
+ * 
+ * @author niushuai02
+ * 
+ */
 enum Shrubbery {
     GROUND, CRAWLING, HANGING
 }

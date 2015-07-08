@@ -9,8 +9,8 @@ enum Signal {
  * 2. 但是 JDK 1.7又增加了 String<br>
  * 3. 不能放 double/Long 之类的，因为向上转型是安全的，向下转型是不安全的
  * 
- * @author niushuai
- *
+ * @author niushuai02
+ * 
  */
 public class _04_SwitchEnum {
     public static void main(String[] args) {

@@ -1,5 +1,11 @@
 package Chapter19;
 
+/**
+ * 可以覆盖toSting()方法，为枚举类型生成不同的字符串描述。
+ * 
+ * @author niushuai02
+ * 
+ */
 public enum _03_SpaceShip {
     SCOUT, GARGO, TRANSPORT, CRUISER, BATTLESHIP, MOTHERSHIP;
 
