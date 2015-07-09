@@ -48,7 +48,8 @@ enum Cycle {
 /**
  * 本文描述了一个屌丝车主和土豪任性女朋友的故事。
  * 
- * 1. 虽然女朋友任性想多打打蜡，然并卵。EnumSet不允许
+ * 1. 虽然女朋友任性想多打打蜡（重复添加 Cycle.BLOWDRY），然并卵。<br>
+ * EnumSet不允许，因为 EnumSet 内部实现是 long 的64位（RegularEnumSet 或 JumboEnumSet），你不可能让 bit 位打开多次吧？
  * 
  * @author niushuai02
  * 
@@ -77,7 +78,7 @@ public class _14_CarWash {
         wash.washCar();
         System.out.println("===========");
 
-        System.out.println("土豪女朋友来啦...");
+        System.out.println("屌丝车主的土豪女朋友来啦...");
         wash.add(Cycle.BLOWDRY);
         wash.add(Cycle.BLOWDRY); // 有钱就要做两次？还这么任性不按流程，先吹风再冲洗打蜡，你TM在逗我们洗车工？
         wash.add(Cycle.RINSE);
