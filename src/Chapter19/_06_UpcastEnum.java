@@ -9,9 +9,6 @@ enum Search {
  * 
  * 但是 Class 类有一个getEnumConstants()方法可以获取枚举类的所有实例。<br>
  * 因为这个方法在 Class 类中，所以全部类都可以使用， 只是非枚举类使用时会返回一个 NULL
- * 
- * @author niushuai02
- * 
  */
 public class _06_UpcastEnum {
     public static void main(String[] args) {

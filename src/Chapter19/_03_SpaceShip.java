@@ -20,6 +20,5 @@ public enum _03_SpaceShip {
         for (_03_SpaceShip s : values()) {
             System.out.println(s);
         }
-
     }
 }

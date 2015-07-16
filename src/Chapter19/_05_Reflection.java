@@ -10,17 +10,14 @@ enum Explore {
 }
 
 /**
- * 虽然enum类都继承自Enum类，但是却发现Enum类中没有values()方法。下面就一探究竟：）
- * 
  * 运行程序后，发现增加了values()方法。这是编译器添加的static方法。一共添加了2个：
+ * <p>
  * 
  * 1. values()<br>
  * 2. 重载版本的valueOf()
+ * <p>
  * 
  * 如果使用<code>javap</code>看下生成的HERE和THERE类，会发现他们是static final Explore HERE,所以枚举类不能被继承。
- * 
- * @author niushuai02
- * 
  */
 public class _05_Reflection {
     /**
