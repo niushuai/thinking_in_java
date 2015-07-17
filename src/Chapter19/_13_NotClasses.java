@@ -34,6 +34,9 @@ public class _13_NotClasses {
 
     // void f1(LikeClasses.RUN a) {}
 
+    void f1(LikeClasses a) {
+    }
+
     public static final String HELLO = "hello";
 
     // void f2(HELLO) {}

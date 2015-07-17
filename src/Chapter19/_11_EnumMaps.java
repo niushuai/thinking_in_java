@@ -19,6 +19,8 @@ enum AlartPoints {
  */
 public class _11_EnumMaps {
     public static void main(String[] args) {
+        
+        System.out.println(Integer.toHexString(-3));
         EnumMap<AlartPoints, Command> em = new EnumMap<AlartPoints, Command>(AlartPoints.class);
 
         em.put(AlartPoints.BEDROOM, new Command() {
