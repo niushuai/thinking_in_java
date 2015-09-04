@@ -3,7 +3,6 @@ package Chapter15;
 import java.util.Iterator;
 
 public class _05_IterableFibonacci extends _04_Fibonacci implements Iterable<Integer> {
-
     private int n;
 
     // 要遍历count 次
@@ -15,7 +14,6 @@ public class _05_IterableFibonacci extends _04_Fibonacci implements Iterable<Int
     public Iterator<Integer> iterator() {
 
         return new Iterator<Integer>() {
-
             @Override
             public boolean hasNext() {
                 return n > 0;
@@ -26,7 +24,6 @@ public class _05_IterableFibonacci extends _04_Fibonacci implements Iterable<Int
                 n--;
                 return _05_IterableFibonacci.this.next();
             }
-
         };
     }
 
@@ -35,5 +32,4 @@ public class _05_IterableFibonacci extends _04_Fibonacci implements Iterable<Int
             System.out.println(i + " ");
         }
     }
-
 }
