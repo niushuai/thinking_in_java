@@ -4,14 +4,6 @@ interface FactoryI<T> {
     T create();
 }
 
-class Foo2<T> {
-    private T x;
-
-    public <F extends FactoryI<T>> Foo2(F factory) {
-        x = factory.create();
-    }
-}
-
 class IntegerFactory implements FactoryI<Integer> {
 
     @Override
@@ -27,6 +19,14 @@ class Widget {
         public Widget create() {
             return new Widget();
         }
+    }
+}
+
+class Foo2<T> {
+    private T x;
+
+    public <F extends FactoryI<T>> Foo2(F factory) {
+        x = factory.create();
     }
 }
 

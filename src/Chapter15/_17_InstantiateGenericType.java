@@ -13,7 +13,6 @@ class ClassAsFactory<T> {
 }
 
 class Employee {
-
 }
 
 // 第一个没问题，因为有默认的构造函数，但是 Integer 没有默认构造函数，所以在运行时会报错

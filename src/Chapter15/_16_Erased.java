@@ -8,6 +8,7 @@ class Erased<T> {
         // }
         //
         // T var = new T();
+        // T[] t = new T[100]();
     }
 }
 
