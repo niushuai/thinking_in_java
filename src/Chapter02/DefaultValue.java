@@ -4,9 +4,8 @@ package Chapter02;
  * 
  * @author niushuai
  * 
- *         查看int和char的默认值
+ * 查看int和char的默认值
  */
-
 public class DefaultValue {
 	int i;
 	char ch;
