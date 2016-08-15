@@ -4,7 +4,7 @@ package Chapter02;
  * 
  * @author niushuai
  * 
- *         在Chapter01的上一层目录执行java Chapter01.CommandArgu happy new year
+ * 在Chapter01的上一层目录执行java Chapter01.CommandArgu happy new year
  */
 
 public class CommandArgu {

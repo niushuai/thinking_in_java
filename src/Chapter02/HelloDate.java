@@ -6,7 +6,7 @@ import java.util.*;
  * 
  * @author niushuai
  * 
- *         使用Date类（在java.util包中）
+ * 使用Date类（在java.util包中）
  */
 
 public class HelloDate {

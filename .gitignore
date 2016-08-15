@@ -10,3 +10,7 @@ copy.sh
 
 #Windows
 bin
+
+#Idea
+thinking_in_java.iml
+/out

@@ -45,6 +45,8 @@ class Waiter implements Runnable {
         } catch (InterruptedException e) {
             System.out.println("Waiter interrupted");
         }
+
+        System.out.println("服务员下班。。。");
     }
 }
 
@@ -68,37 +70,42 @@ class Chef implements Runnable {
                 }
 
                 if (++count == 11) {
-                    System.out.println("菜上齐了");
+                    System.out.println("\n菜上齐了\n");
                     //这块只是向 chef 和 waiter 发送一个 interrupt 信号
                     //但是因为 synchronized 和 IO 是不能被中断的，所以这里会通过可中断的
                     //sleep()抛出 InterruptedException。
                     //而 waiter 只能通过 while(Thread.interrupted())抛出的 InterruptedException返回
-                    
-                    //而且我们会发现，多做了一个菜！本来做了10个就够了。11个本意想关闭程序，但是因为
-                    //synchronized 无法中断，只好又做了一个菜（厨师也饿了）。但是因为服务员在 wait()，可以被中断
-                    //所以做好的菜没有被服务员上去。。。。
+
                     restaurant.exec.shutdownNow();
+                    TimeUnit.MILLISECONDS.sleep(100);
                 }
 
-                System.out.print("做菜ing...");
+                System.out.println("做菜ing...");
+
+                // 因为要让服务员来端菜,所以需要在服务员上加锁。
                 synchronized (restaurant.waiter) {
                     restaurant.meal = new Meal(count);
                     restaurant.waiter.notifyAll();
                 }
 
                 TimeUnit.MILLISECONDS.sleep(100);
+
+
             }
         } catch (InterruptedException e) {
             System.out.println("chef interrupted");
         }
+
+        System.out.println("厨师下班。。。");
     }
 }
 
 public class Restaurant {
-    Meal meal;
     ExecutorService exec = Executors.newCachedThreadPool();
-    Waiter waiter = new Waiter(this);
+
     Chef chef = new Chef(this);
+    Waiter waiter = new Waiter(this);
+    Meal meal;
 
     public Restaurant() {
         exec.execute(chef);
