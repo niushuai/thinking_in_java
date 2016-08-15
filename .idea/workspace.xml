@@ -4,13 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Chapter21/Restaurant.java" line="110" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e79f91f-a803-4b48-9916-5fcc020409d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chapter21/DeadLockTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chapter21/WaxOMatic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chapter02/CommandArgu.java" afterPath="$PROJECT_DIR$/src/Chapter02/CommandArgu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chapter02/HelloDate.java" afterPath="$PROJECT_DIR$/src/Chapter02/HelloDate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chapter21/Restaurant.java" afterPath="$PROJECT_DIR$/src/Chapter21/Restaurant.java" />
-    </list>
+    <list default="true" id="9e79f91f-a803-4b48-9916-5fcc020409d7" name="Default" comment="" />
     <ignored path="thinking_in_java.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -590,7 +584,7 @@
       <updated>1470280995321</updated>
       <workItem from="1470280997849" duration="4230000" />
       <workItem from="1470499624254" duration="319000" />
-      <workItem from="1470624531383" duration="12598000" />
+      <workItem from="1470624531383" duration="12832000" />
     </task>
     <task id="LOCAL-00001" summary="test idea git plugin">
       <created>1470281436276</created>
@@ -603,7 +597,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17147000" />
+    <option name="totallyTimeSpent" value="17381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
